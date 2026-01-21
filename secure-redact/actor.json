@@ -1,0 +1,10 @@
+{
+    "actorSpecification": 1,
+    "name": "secure-redact",
+    "title": "SecureRedact - Serverless PII Guard",
+    "description": "HIPAA/GDPR-compliant PII redaction API. Detects and removes personal data like phones, emails, and names.",
+    "version": "1.0",
+    "dockerfile": "./Dockerfile",
+    "buildTag": "latest",
+    "input": "./input_schema.json"
+}

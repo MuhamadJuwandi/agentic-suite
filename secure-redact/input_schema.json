@@ -1,0 +1,29 @@
+{
+    "title": "Input Schema for SecureRedact",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "text": {
+            "title": "Text to Redact",
+            "type": "string",
+            "description": "The text content containing potential PII.",
+            "editor": "textarea",
+            "prefill": "My name is John and my number is 08123456789."
+        },
+        "anonymize": {
+            "title": "Anonymize Output",
+            "type": "boolean",
+            "description": "If true, replaces PII with tags or masking.",
+            "default": true
+        },
+        "mask_char": {
+            "title": "Masking Character",
+            "type": "string",
+            "description": "Character to use for masking (e.g. *). Leave empty for default replacement tag.",
+            "default": "*"
+        }
+    },
+    "required": [
+        "text"
+    ]
+}
