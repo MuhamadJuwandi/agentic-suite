@@ -1,0 +1,26 @@
+{
+    "title": "SecureRedact Output",
+    "type": "object",
+    "properties": {
+        "redacted_text": {
+            "title": "Redacted Text",
+            "type": "string",
+            "description": "The final text with PII removed/masked."
+        },
+        "entities_detected": {
+            "title": "Detected API",
+            "type": "array",
+            "description": "List of PII entities found (Type, Position, Score)."
+        },
+        "original_length": {
+            "title": "Original Length",
+            "type": "integer",
+            "description": "Character count of the input text."
+        },
+        "is_success": {
+            "title": "Status",
+            "type": "boolean",
+            "description": "True if processing was successful."
+        }
+    }
+}
