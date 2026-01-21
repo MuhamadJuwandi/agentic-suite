@@ -15,9 +15,5 @@ COPY . .
 ENV PORT=8000
 EXPOSE 8000
 
-# Run the application
-# CMD ["uvicorn", "api.index:app", "--host", "0.0.0.0", "--port", "8000"]
-
-# For Apify, we might want a wrapper script to handle input/output if running as a standalone script,
-# but if running as a web server actor:
-CMD ["uvicorn", "api.index:app", "--host", "0.0.0.0", "--port", "8000"]
+# Run the application as a standalone script (One-off task)
+CMD ["python", "main.py"]

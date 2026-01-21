@@ -20,6 +20,7 @@
             "title": "Masking Character",
             "type": "string",
             "description": "Character to use for masking (e.g. *). Leave empty for default replacement tag.",
+            "editor": "textfield",
             "default": "*"
         }
     },
